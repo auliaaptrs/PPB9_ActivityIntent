@@ -1,33 +1,26 @@
-<<<<<<< HEAD
-Dessert Clicker app
-=====================
+# Dessert Clicker app
 
-Code for Android Basics with Compose Codelab.
+Dessert Clicker adalah aplikasi Android sederhana yang dibangun sebagai bagian dari materi pembelajaran Android modern oleh Google. Aplikasi ini adalah clicker game di mana pengguna mengetuk gambar dessert untuk mendapatkan poin dan membuka dessert baru. Proyek ini merupakan contoh implementasi yang sangat baik untuk konsep-konsep inti Jetpack Compose.
 
-Introduction
-------------
+## 🍰 Fitur
+Gameplay Interaktif: Klik pada dessert untuk meningkatkan pendapatan dan jumlah dessert yang terjual.
+Progresivitas Otomatis: Aplikasi secara otomatis menampilkan dessert baru yang lebih mahal setelah mencapai jumlah penjualan tertentu.
+State yang Persisten: Skor dan progres game tidak akan hilang saat layar diputar (perubahan konfigurasi), berkat manajemen state yang tepat.
+Fungsi Berbagi: Pengguna dapat membagikan skor mereka ke aplikasi lain menggunakan Android Sharesheet.
 
-Dessert Clicker is a game about making desserts.
+## 🛠️ Teknologi yang Digunakan
+- Bahasa: Kotlin
+- UI Toolkit: Jetpack Compose - Toolkit UI modern dan deklaratif dari Google.
+- Desain: Material 3 - Mengikuti panduan desain terbaru dari Google.
+- Arsitektur: Mengikuti prinsip arsitektur Android modern dengan pemisahan antara UI, data, dan logika.
 
-Press the button, make a dessert, earn the big bucks.
+## ✨ Konsep Utama yang Dipelajari
+Proyek ini adalah studi kasus yang sangat baik untuk memahami beberapa konsep fundamental dalam pengembangan Android modern:
 
-You use this app in the course to explore the Android lifecycle and log messages to
-the Android console (Logcat).
-
-Pre-requisites
---------------
-
-You need to know:
-- How to open, build, and run apps with Android Studio.
-- What an activity is, and how to create one in your app.
-- What the activity's onCreate() method does, and the kind of operations
-  that are performed in that method.
-
-
-Getting Started
----------------
-
-1. Download and run the app.
-=======
-# PPB9_ActivityIntent
->>>>>>> 0df706b227d633f8a0e7c1e97cc7bed177cdf485
+- UI Deklaratif: Membangun UI dengan mendeskripsikan seperti apa tampilannya untuk state tertentu, bukan bagaimana cara mengubahnya.
+- Manajemen State (State Management): Menggunakan mutableStateOf untuk membuat data yang dapat diobservasi oleh UI.
+- Menggunakan rememberSaveable untuk menjaga (mengingat) state agar selamat dari perubahan konfigurasi (seperti rotasi layar) dan bahkan saat proses aplikasi dimatikan oleh sistem.
+- Siklus Hidup Activity (Lifecycle Awareness): Memahami bagaimana state dan UI bereaksi terhadap siklus hidup Android, dan bagaimana Compose menyederhanakan penanganannya.
+- Arsitektur Bersih (Clean Architecture): Mempraktikkan pemisahan tugas dengan menempatkan data, model, dan logika UI di dalam file dan paket yang terpisah.
+- Integrasi Intent: Menggunakan Intent.ACTION_SEND untuk berinteraksi dengan komponen Android lain dan memicu fungsionalitas berbagi.
+- State Hoisting: Menerapkan pola di mana state diangkat ke komponen induk untuk membuat komponen UI menjadi stateless dan lebih mudah digunakan kembali.
